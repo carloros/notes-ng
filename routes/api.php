@@ -18,3 +18,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('/v1/notes', 'NoteController@index');
+
+Route::get('/v1/tags', 'TagController@index');
